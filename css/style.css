@@ -71,6 +71,10 @@ body * {
     max-width: 1230px;
 }
 
+.table {
+    display: none;
+}
+
 /* Header styles start */
 .header {
     background-color: #131313;
@@ -186,43 +190,34 @@ body * {
     font-weight: 400;
     font-size: 22px;
     color: #FFFFFF;
-    margin-bottom: 61px;
+    margin-bottom: 51px;
 }
 
 .turkey_buttons {
     display: flex;
 }
 
-.turkey_button {
+.turkey_button-right {
     margin-left: 20px;
 }
 
-.turkey_button_left, .turkey_button_right {
+.turkey_button {
+    padding: 19px 42px;
     font-family: 'Nunito Sans';
     font-style: italic;
     font-weight: 400;
     font-size: 11px;
-    text-decoration: none;
+    text-align: center;
     color: #FFFFFF;
-    padding: 19px 41px;
-}
-
-.turkey_button_left {
-    background-color: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-    border-radius: 2px;
+    background-color: transparent;
     transition: background-color 0.2s linear;
 }
 
-.turkey_button_left:hover {
+.turkey_button:hover {
     background-color: #ba975e;
 }
 
-.turkey_button_right {
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-}
-  /*Turkey end*/
+ /*Turkey end*/
 
 /* Black section start */
 .black_section {
@@ -943,3 +938,628 @@ body * {
 }
 /*Contacts section end*/
 
+
+/* Mobile section start*/
+.table_container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.table_header {
+    background-color: #131313;
+    padding: 25px 0;
+}
+
+.table_turkey_buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.table_turkey_button-up {
+    margin-bottom: 40px;
+}
+
+.table_turkey_btn {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+    transition: background-color 0.2s linear;
+}
+
+.table_turkey_btn:hover{
+    background-color: #E3B873;
+}
+
+.table_header-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.table_black_section {
+    background-color: #131313;
+}
+
+.table_black_section_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table_complete_project_title {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-top: 36px;
+    margin-bottom: 22px;
+}
+
+.table_complete_project_text {
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.table-image {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.table_black_section-image {
+    position: relative;
+}
+
+.table_black_section_text-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.table_black_section_text-info-right {
+    margin-left: 120px;
+}
+
+.table_black_section_text-info-title {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-top: 50px;
+    margin-bottom: 12px;
+}
+
+.table_black_section_text-info-subtitle {
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.info-title-down {
+    padding-top: 62px;
+}
+
+.table_black_vector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.table_vector_img {
+    display: flex;
+    justify-content: center;
+}
+
+.table_video_image {
+    position: relative;
+}
+
+.table_video {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table_video_img {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.table_video_icon {
+    position: absolute;
+    top: 140px;
+    left: 320px;
+}
+
+.table_video_text {
+    padding-top: 50px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.table_registrations {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.table_registration-name {
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 50px;
+    margin-bottom: 8px;
+}
+
+.table_registration_text {
+    width: 0 auto;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    outline: none;
+    background-color: #131313;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.tabel-checkbox_text {
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.table_registrations-btn {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #E3B873;
+    box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+    transition: background-color 0.2s linear;
+}
+
+.table_registrations-btn:hover {
+    background-color: #ba975e;
+}
+
+.table_white_section {
+    background-color: #FFFFFF;
+}
+
+.table_types_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.table_types_title-text {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #181818;
+    padding-top: 85px;
+}
+
+.white_section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.white_section-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 180px;
+}
+
+.white_card_info {
+    display: block;
+    position: absolute;
+    width: 270px;
+    background-color: #fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    bottom: -100px;
+}
+
+.white_card_info-title {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 15px;
+    color: #363636;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 31px;
+}
+
+.white_card_info-list {
+    margin-left: 31px;
+}
+
+.white_card_info-button {
+    padding-top: 17px;
+}
+
+.table_white_text_realize {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-bottom: 145px;
+}
+
+.table_footer_section {
+    background-color: #131313;
+}
+
+.table_furniture_image {
+    position: relative;
+}
+
+.furniture_slide {
+    position: absolute;
+    top: -120px;
+    left: 220px;
+}
+
+.furniture_arrow-left {
+    position: absolute;
+    top: 0;
+    left: 230px;
+}
+
+.furniture_arrow-right {
+    position: absolute;
+    top: 0;
+    right: 230px;
+}
+
+.table_footer_section-title {
+    padding-top: 173px;
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.table_map {
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.table_map-img {
+    width: 100%;
+}
+
+.table_footer_text {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 25px;
+}
+
+.table_footer-icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.table_icon_inst {
+    margin-left: 20px;
+}
+/* Mobile section end */
+
+@media screen and (max-width: 1220px) {
+    .header-line {
+        justify-content: space-around;
+    }
+
+    .header_button {
+        display: none;
+    }
+
+    .black_content { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .completed_projects_title, .completed_projects_subtitle {
+        text-align: center;
+    }
+
+    .completed_projects_info, .black_slider {
+        justify-content: center;
+    }
+
+    .city_nav {
+        display: none;
+    }
+
+    .black_text-title, .vector_img {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .type_of_repair-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .card_recorating {
+        margin-bottom: 220px;
+    }
+
+    .types_down_section {
+        margin-top: 50px;
+    }
+
+    .types_down_sections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .black_right_icons {
+        display: none;
+    }
+
+    .style_section_images_right {
+        display: none;
+    }
+
+    .style_section_images_left {
+        display: block;
+    }
+
+    .image_left-up {
+        position: absolute;
+        top: 40px;
+        left: 400px;
+    }
+    
+    .image_left-down {
+        position: absolute;
+        top: 640px;
+        left: 400px;
+    }
+
+    .clients_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clients_card {
+        margin-bottom: 20px;
+    }
+}   
+
+@media screen and (max-width: 950px) {
+    .header_nav{
+        display: none;
+    }
+    .image_left-up {
+        position: absolute;
+        top: 40px;
+        left: 250px;
+    }
+    
+    .image_left-down {
+        position: absolute;
+        top: 640px;
+        left: 250px;
+    }
+
+    .map_image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .desctop {
+        display: none;
+    }
+
+    .table {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .table_container{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .turkey_title {
+        font-size: 30px;
+    }
+
+    .turkey_subtitle {
+        font-size: 16px;
+    }
+
+    .table_black_section_content {
+        margin: 0 auto;
+    }
+
+    .table-image {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .table_video_icon {
+        position: absolute;
+        top: 80px;
+        left: 200px;
+    }
+
+    .furniture_slide {
+        left: 110px;
+    }
+    
+    .furniture_arrow-left, .furniture_arrow-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 562px) {
+    .furniture_slide {
+        left: 80px;
+    }
+
+    .table_video_icon {
+        position: absolute;
+        top: 60px;
+        left: 180px;        
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .table_black_section_text-info-title {
+        font-size: 14px;
+    }
+
+    .table_black_section_text-info-subtitle {
+        font-size: 11px;
+    }
+
+    .table_black_section_text-info-right {
+        margin-left: 60px;
+    }
+
+    .table_video_icon {
+        position: absolute;
+        top: 40px;
+        left: 130px;        
+    }
+
+    .furniture_slide {
+        left: 35px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .table_container {
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .header_logo, .header_phone {
+        font-size: 11px;
+    }
+
+    .turkey_title {
+        font-size: 23px;
+    }
+
+    .turkey_subtitle {
+        font-size: 14px;
+    }
+
+    .table_turkey_btn {
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-family: 'Nunito Sans';
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    .table_complete_project_title {
+        font-size: 22px;
+    }
+
+    .table_complete_project_text, .table_video_text {
+        font-size: 11px;
+    }
+
+    .tabel-checkbox_text {
+        font-size: 14px;
+    }
+
+    .table_footer_text {
+        font-size: 18px;
+    }
+
+    .table_furniture_image {
+        left: -20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .table_container {
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    .table_turkey_btn {
+        width: 90%;
+    }
+
+    .table_video_icon {
+        position: absolute;
+        top: 20px;
+        left: 78px;       
+    }
+
+    .table_furniture_image {
+        left: -60px;
+    }
+}
+    
